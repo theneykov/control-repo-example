@@ -7,4 +7,13 @@ class awstest {
     require => Exec['update'],
     ensure => installed,
   }
+
+  package { 'httpd':
+    require => Exec['update'],
+    ensure => installed,
+  }
+
+  service { 'httpd'
+    ensure => running,
+  }
 }
