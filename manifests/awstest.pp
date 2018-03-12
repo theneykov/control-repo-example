@@ -13,7 +13,7 @@ class awstest {
     ensure => installed,
   }
 
-  service { 'httpd'
+  service { 'httpd':
     ensure => running,
   }
 }
