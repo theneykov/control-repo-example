@@ -33,3 +33,7 @@ node default {
     include "role::${trusted['extensions']['pp_role']}"
   }
 }
+
+node 'i-01041c9a1d3d0c8f4' {
+  include 'awstest'
+}
